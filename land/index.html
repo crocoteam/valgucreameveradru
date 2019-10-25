@@ -667,6 +667,7 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/2.5.3/url.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+	<script src="https://beta.dolphin.ru.com/js/tracker.min.js"></script>
 	<script>
 	$.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
 	  window.ip = data.geobytesremoteip;
@@ -694,8 +695,9 @@
 	                method: 'post',
 	                data: data,
 	                success: function (r) {
-	                    $(form).find('button[type="submit"]').text('Получить бесплатно');
-	                    location.href = '../thanks.html';
+	                    //$(form).find('button[type="submit"]').text('Получить бесплатно');
+	                    //location.href = '../thanks.html';
+											console.log(r);
 	                }
 	            })
 	        });
