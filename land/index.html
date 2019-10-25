@@ -690,7 +690,7 @@
 	            };
 	            console.log(data);
 	            $.ajax('https://tracker.everad.com/conversion/new', {
-	                method: 'get',
+	                method: 'post',
 	                data: data,
 	                success: function (r) {
 	                    $(form).find('button[type="submit"]').text('Получить бесплатно');
