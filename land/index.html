@@ -685,11 +685,12 @@
 	                campaign_id: 906780	,
 	                ip: window.ip,
 	                phone: $(this).find('input[name="phone"]').val(),
+									redirect_url: location.href.replace('land/index.html', 'thanks.html'),
 	                country_code: 'RU',
 	                sub_id: [url('?subid')]
 	            };
 	            console.log(data);
-	            $.ajax('https://tracker.everad.com/conversion/new', {
+	            $.ajax('https://beta.dolphin.ru.com/everad.php', {
 	                method: 'post',
 	                data: data,
 	                success: function (r) {
